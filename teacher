@@ -1,0 +1,16 @@
+#if django group permission works
+teacher=Group.objects.get('teacher'); if teacher in request.user.groups.all().
+class Person(models.Model):
+   first_name = models.CharField(max_length=255)
+   last_name = models.CharField(max_length=255)
+   email = models.CarField(max_length=255)
+   password = models.CarField(max_length=255)
+   
+
+class Student(Person):
+  pick_classes=  models.CharField(max_length=255)
+
+
+class Teacher(Person):
+   classes= models.CharField(max_length=255)
+   
