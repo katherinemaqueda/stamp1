@@ -13,4 +13,10 @@ class Student(Person):
 
 class Teacher(Person):
    classes= models.CharField(max_length=255)
+
+user = Person.objects.get(id=id)  # id is the view param
+if hasattr(user, 'student'):
+    print("Student")
+else:  # hasattr(user, 'teacher')
+    print("Teacher")
    
